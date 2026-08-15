@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AURORA EXCHANGE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="aurora-bg">
+    <div class="aurora a1"></div>
+    <div class="aurora a2"></div>
+    <div class="aurora a3"></div>
+</div>
+
+<div id="particles"></div>
+
+
+<main class="app">
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                ✦
+            </div>
+
+            <div>
+                <h1>AURORA</h1>
+                <p>EXCHANGE • CURRENCY INTELLIGENCE</p>
+            </div>
+
+        </div>
+
+        <div class="live">
+
+            <span class="live-dot"></span>
+
+            LIVE
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-label">
+            SMART CURRENCY CONVERTER
+        </div>
+
+        <h2>
+            حوّل أموالك
+            <span>بأناقة.</span>
+        </h2>
+
+        <p>
+            تجربة تحويل عملات مصممة بطريقة مختلفة.
+        </p>
+
+    </section>
+
+
+    <!-- CONVERTER -->
+
+    <section class="converter">
+
+        <div class="converter-title">
+
+            <div>
+                <span>CONVERSION</span>
+                <h3>محول العملات</h3>
+            </div>
+
+            <button id="swapBtn" class="swap">
+                ⇄
+            </button>
+
+        </div>
+
+
+        <!-- FROM -->
+
+        <div class="currency-card">
+
+            <div class="card-top">
+
+                <span>من</span>
+
+                <span class="mini-label">
+                    AMOUNT
+                </span>
+
+            </div>
+
+            <div class="currency-row">
+
+                <input
+                    id="amount"
+                    type="number"
+                    value="1"
+                    min="0"
+                    inputmode="decimal"
+                >
+
+                <select id="fromCurrency">
+
+                    <option value="USD">🇺🇸 USD</option>
+                    <option value="EUR">🇪🇺 EUR</option>
+                    <option value="GBP">🇬🇧 GBP</option>
+                    <option value="SAR">🇸🇦 SAR</option>
+                    <option value="AED">🇦🇪 AED</option>
+                    <option value="YER">🇾🇪 YER</option>
+                    <option value="KWD">🇰🇼 KWD</option>
+                    <option value="QAR">🇶🇦 QAR</option>
+                    <option value="JPY">🇯🇵 JPY</option>
+                    <option value="CNY">🇨🇳 CNY</option>
+                    <option value="KRW">🇰🇷 KRW</option>
+                    <option value="TRY">🇹🇷 TRY</option>
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONNECTOR -->
+
+        <div class="connector">
+
+            <div></div>
+
+            <button id="middleSwap">
+                ↓
+            </button>
+
+            <div></div>
+
+        </div>
+
+
+        <!-- TO -->
+
+        <div class="currency-card destination">
+
+            <div class="card-top">
+
+                <span>إلى</span>
+
+                <span class="mini-label">
+                    RESULT
+                </span>
+
+            </div>
+
+            <div class="currency-row">
+
+                <div
+                    id="result"
+                    class="result"
+                >
+                    0.00
+                </div>
+
+                <select id="toCurrency">
+
+                    <option value="EUR">🇪🇺 EUR</option>
+                    <option value="USD">🇺🇸 USD</option>
+                    <option value="GBP">🇬🇧 GBP</option>
+                    <option value="SAR">🇸🇦 SAR</option>
+                    <option value="AED">🇦🇪 AED</option>
+                    <option value="YER">🇾🇪 YER</option>
+                    <option value="KWD">🇰🇼 KWD</option>
+                    <option value="QAR">🇶🇦 QAR</option>
+                    <option value="JPY">🇯🇵 JPY</option>
+                    <option value="CNY">🇨🇳 CNY</option>
+                    <option value="KRW">🇰🇷 KRW</option>
+                    <option value="TRY">🇹🇷 TRY</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- RATE -->
+
+        <div class="rate-box">
+
+            <div>
+
+                <span>سعر الصرف</span>
+
+                <strong id="rate">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="rate-change">
+                <span>24H</span>
+                <strong id="change">
+                    +0.00%
+                </strong>
+            </div>
+
+        </div>
+
+
+        <button
+            id="convertBtn"
+            class="convert-btn"
+        >
+
+            <span>تحويل الآن</span>
+
+            <b>→</b>
+
+        </button>
+
+    </section>
+
+
+    <!-- MARKET -->
+
+    <section class="market">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span>MARKET PULSE</span>
+
+                <h3>
+                    حركة العملات
+                </h3>
+
+            </div>
+
+            <div class="market-status">
+                ● السوق نشط
+            </div>
+
+        </div>
+
+
+        <div class="market-grid">
+
+            <div class="market-card">
+
+                <div class="coin">
+
+                    <div class="coin-icon usd">
+                        $
+                    </div>
+
+                    <div>
+                        <strong>USD</strong>
+                        <small>US Dollar</small>
+                    </div>
+
+                </div>
+
+                <strong class="up">
+                    +1.24%
+                </strong>
+
+                <div class="sparkline">
+                    ╱╲╱╲╲╱╱╲╱
+                </div>
+
+            </div>
+
+
+            <div class="market-card">
+
+                <div class="coin">
+
+                    <div class="coin-icon eur">
+                        €
+                    </div>
+
+                    <div>
+                        <strong>EUR</strong>
+                        <small>Euro</small>
+                    </div>
+
+                </div>
+
+                <strong class="down">
+                    -0.38%
+                </strong>
+
+                <div class="sparkline">
+                    ╲╱╲╲╱╱╲╱╲
+                </div>
+
+            </div>
+
+
+            <div class="market-card">
+
+                <div class="coin">
+
+                    <div class="coin-icon gbp">
+                        £
+                    </div>
+
+                    <div>
+                        <strong>GBP</strong>
+                        <small>Pound</small>
+                    </div>
+
+                </div>
+
+                <strong class="up">
+                    +0.72%
+                </strong>
+
+                <div class="sparkline">
+                    ╱╲╱╲╱╲╲╱
+                </div>
+
+            </div>
+
+
+            <div class="market-card">
+
+                <div class="coin">
+
+                    <div class="coin-icon sar">
+                        ر
+                    </div>
+
+                    <div>
+                        <strong>SAR</strong>
+                        <small>Saudi Riyal</small>
+                    </div>
+
+                </div>
+
+                <strong class="up">
+                    +0.08%
+                </strong>
+
+                <div class="sparkline">
+                    ╱╱╲╱╲╲╱╲
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="features">
+
+        <div class="feature">
+
+            <div>⚡</div>
+
+            <strong>سريع</strong>
+
+            <span>نتيجة فورية</span>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div>◈</div>
+
+            <strong>ذكي</strong>
+
+            <span>حساب تلقائي</span>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div>⌁</div>
+
+            <strong>مرن</strong>
+
+            <span>عملات متعددة</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <span>AURORA ENGINE v1.0</span>
+
+        <span id="time">
+            00:00:00
+        </span>
+
+    </footer>
+
+</main>
+
+
+<div id="toast">
+    تم التحويل بنجاح
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
