@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="شروط استخدام موقع AURORA EXCHANGE"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <title>شروط الاستخدام | AURORA EXCHANGE</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #050812;
+            --panel: rgba(255,255,255,.055);
+            --border: rgba(255,255,255,.10);
+            --text: #ffffff;
+            --muted: #9aa3bd;
+            --cyan: #00eaff;
+            --violet: #8b5cff;
+            --pink: #ff3cac;
+            --green: #00f5a0;
+            --red: #ff5470;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+
+            font-family:
+                Arial,
+                "Segoe UI",
+                Tahoma,
+                sans-serif;
+
+            color: var(--text);
+
+            background:
+                radial-gradient(
+                    circle at 10% 10%,
+                    rgba(0,234,255,.13),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 90% 20%,
+                    rgba(139,92,255,.15),
+                    transparent 32%
+                ),
+                radial-gradient(
+                    circle at 50% 100%,
+                    rgba(255,60,172,.10),
+                    transparent 35%
+                ),
+                var(--bg);
+
+            line-height: 1.9;
+
+            overflow-x: hidden;
+        }
+
+        .background {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .orb {
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            filter: blur(95px);
+
+            opacity: .22;
+
+            animation:
+                floating
+                14s
+                infinite
+                alternate
+                ease-in-out;
+        }
+
+        .orb.one {
+            background: var(--cyan);
+            top: -120px;
+            right: -90px;
+        }
+
+        .orb.two {
+            background: var(--violet);
+            left: -120px;
+            top: 45%;
+            animation-delay: 3s;
+        }
+
+        .orb.three {
+            background: var(--pink);
+            right: 20%;
+            bottom: -170px;
+            animation-delay: 6s;
+        }
+
+        @keyframes floating {
+
+            from {
+                transform:
+                    translate(0,0)
+                    scale(1);
+            }
+
+            to {
+                transform:
+                    translate(65px,-45px)
+                    scale(1.3);
+            }
+        }
+
+        .container {
+            width:
+                min(
+                    920px,
+                    calc(100% - 30px)
+                );
+
+            margin:
+                auto;
+
+            padding:
+                25px
+                0
+                50px;
+        }
+
+        header {
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            gap: 20px;
+
+            padding:
+                18px
+                20px;
+
+            margin-bottom:
+                25px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                22px;
+
+            background:
+                rgba(255,255,255,.045);
+
+            backdrop-filter:
+                blur(25px);
+
+            box-shadow:
+                0 20px 70px
+                rgba(0,0,0,.25);
+        }
+
+        .brand {
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap: 12px;
+        }
+
+        .brand-icon {
+            width: 46px;
+            height: 46px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            border-radius:
+                15px;
+
+            font-size:
+                22px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--cyan),
+                    var(--violet),
+                    var(--pink)
+                );
+
+            box-shadow:
+                0 0 30px
+                rgba(0,234,255,.20);
+        }
+
+        .brand-name {
+            font-size:
+                18px;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                3px;
+        }
+
+        .brand-subtitle {
+            margin-top:
+                2px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                8px;
+
+            letter-spacing:
+                1.5px;
+        }
+
+        .back-button {
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            min-height:
+                42px;
+
+            padding:
+                0 15px;
+
+            border:
+                1px solid
+                rgba(0,234,255,.20);
+
+            border-radius:
+                13px;
+
+            color:
+                var(--cyan);
+
+            background:
+                rgba(0,234,255,.05);
+
+            text-decoration:
+                none;
+
+            font-size:
+                11px;
+
+            transition:
+                .25s;
+        }
+
+        .back-button:hover {
+            transform:
+                translateY(-2px);
+
+            background:
+                rgba(0,234,255,.10);
+        }
+
+        .hero {
+            padding:
+                35px
+                20px;
+
+            margin-bottom:
+                18px;
+
+            text-align:
+                center;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                28px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,.075),
+                    rgba(255,255,255,.025)
+                );
+
+            backdrop-filter:
+                blur(25px);
+
+            box-shadow:
+                0 25px 80px
+                rgba(0,0,0,.30);
+        }
+
+        .badge {
+            display:
+                inline-block;
+
+            padding:
+                6px
+                12px;
+
+            margin-bottom:
+                14px;
+
+            border:
+                1px solid
+                rgba(0,234,255,.20);
+
+            border-radius:
+                30px;
+
+            color:
+                var(--cyan);
+
+            background:
+                rgba(0,234,255,.04);
+
+            font-size:
+                8px;
+
+            letter-spacing:
+                2px;
+        }
+
+        .hero h1 {
+            font-size:
+                clamp(
+                    30px,
+                    8vw,
+                    52px
+                );
+
+            line-height:
+                1.2;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--cyan),
+                    var(--violet),
+                    var(--pink)
+                );
+
+            background-size:
+                250%;
+
+            -webkit-background-clip:
+                text;
+
+            background-clip:
+                text;
+
+            color:
+                transparent;
+
+            animation:
+                gradientMove
+                6s
+                infinite;
+        }
+
+        @keyframes gradientMove {
+
+            0% {
+                background-position:
+                    0%;
+            }
+
+            50% {
+                background-position:
+                    100%;
+            }
+
+            100% {
+                background-position:
+                    0%;
+            }
+        }
+
+        .hero p {
+            max-width:
+                650px;
+
+            margin:
+                12px auto 0;
+
+            color:
+                var(--muted);
+
+            font-size:
+                13px;
+        }
+
+        .updated {
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+
+            gap:
+                8px;
+
+            margin-bottom:
+                18px;
+
+            color:
+                #707992;
+
+            font-size:
+                10px;
+        }
+
+        .dot {
+            width:
+                6px;
+
+            height:
+                6px;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--green);
+
+            box-shadow:
+                0 0 12px
+                var(--green);
+        }
+
+        .content {
+            display:
+                grid;
+
+            gap:
+                14px;
+        }
+
+        .section {
+            position:
+                relative;
+
+            padding:
+                24px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                22px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            backdrop-filter:
+                blur(18px);
+
+            transition:
+                .25s;
+        }
+
+        .section:hover {
+            transform:
+                translateY(-2px);
+
+            border-color:
+                rgba(0,234,255,.20);
+        }
+
+        .number {
+            position:
+                absolute;
+
+            top:
+                20px;
+
+            left:
+                20px;
+
+            width:
+                32px;
+
+            height:
+                32px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            border-radius:
+                10px;
+
+            color:
+                var(--cyan);
+
+            background:
+                rgba(0,234,255,.07);
+
+            border:
+                1px solid
+                rgba(0,234,255,.15);
+
+            font-size:
+                10px;
+
+            font-weight:
+                bold;
+        }
+
+        .section h2 {
+            padding-left:
+                45px;
+
+            margin-bottom:
+                10px;
+
+            color:
+                white;
+
+            font-size:
+                19px;
+        }
+
+        .section p {
+            margin-top:
+                8px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                13px;
+        }
+
+        .section ul {
+            margin-top:
+                12px;
+
+            padding-right:
+                22px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                13px;
+        }
+
+        .section li {
+            margin-bottom:
+                7px;
+        }
+
+        .warning {
+            margin-top:
+                15px;
+
+            padding:
+                14px
+                16px;
+
+            border-right:
+                3px solid
+                var(--red);
+
+            border-radius:
+                12px;
+
+            color:
+                #e3e7f2;
+
+            background:
+                rgba(255,84,112,.05);
+
+            font-size:
+                12px;
+        }
+
+        .highlight {
+            margin-top:
+                15px;
+
+            padding:
+                14px
+                16px;
+
+            border-right:
+                3px solid
+                var(--cyan);
+
+            border-radius:
+                12px;
+
+            color:
+                #dce3f5;
+
+            background:
+                rgba(0,234,255,.045);
+
+            font-size:
+                12px;
+        }
+
+        footer {
+            margin-top:
+                25px;
+
+            padding:
+                20px;
+
+            text-align:
+                center;
+
+            border-top:
+                1px solid
+                rgba(255,255,255,.07);
+
+            color:
+                #596177;
+
+            font-size:
+                9px;
+
+            line-height:
+                2;
+        }
+
+        .footer-brand {
+            color:
+                #7d87a2;
+
+            font-weight:
+                bold;
+
+            letter-spacing:
+                2px;
+        }
+
+        @media (max-width:600px) {
+
+            .container {
+                width:
+                    calc(100% - 20px);
+
+                padding-top:
+                    10px;
+            }
+
+            header {
+                padding:
+                    13px;
+
+                border-radius:
+                    18px;
+            }
+
+            .brand-icon {
+                width:
+                    40px;
+
+                height:
+                    40px;
+            }
+
+            .brand-name {
+                font-size:
+                    15px;
+
+                letter-spacing:
+                    2px;
+            }
+
+            .brand-subtitle {
+                font-size:
+                    7px;
+            }
+
+            .back-button {
+                min-height:
+                    38px;
+
+                padding:
+                    0 11px;
+
+                font-size:
+                    9px;
+            }
+
+            .hero {
+                padding:
+                    28px 16px;
+
+                border-radius:
+                    22px;
+            }
+
+            .section {
+                padding:
+                    20px 17px;
+            }
+
+            .section h2 {
+                font-size:
+                    17px;
+
+                padding-left:
+                    38px;
+            }
+
+            .section p,
+            .section ul {
+                font-size:
+                    12px;
+            }
+
+            .number {
+                top:
+                    17px;
+
+                left:
+                    15px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="background">
+
+    <div class="orb one"></div>
+
+    <div class="orb two"></div>
+
+    <div class="orb three"></div>
+
+</div>
+
+
+<main class="container">
+
+
+<header>
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            ✦
+        </div>
+
+        <div>
+
+            <div class="brand-name">
+                AURORA
+            </div>
+
+            <div class="brand-subtitle">
+                EXCHANGE • CURRENCY INTELLIGENCE
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a
+        href="index.html"
+        class="back-button"
+    >
+        العودة إلى الموقع
+    </a>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="badge">
+        TERMS OF USE
+    </div>
+
+    <h1>
+        شروط الاستخدام
+    </h1>
+
+    <p>
+        توضح هذه الشروط القواعد العامة لاستخدام
+        منصة AURORA EXCHANGE والخدمات المتوفرة فيها.
+    </p>
+
+</section>
+
+
+<div class="updated">
+
+    <span class="dot"></span>
+
+    <span>
+        آخر تحديث: أغسطس 2026
+    </span>
+
+</div>
+
+
+<div class="content">
+
+
+<section class="section">
+
+    <div class="number">
+        01
+    </div>
+
+    <h2>
+        قبول الشروط
+    </h2>
+
+    <p>
+        باستخدامك لموقع AURORA EXCHANGE فإنك تقر
+        بأنك قرأت شروط الاستخدام هذه وفهمتها
+        وتوافق على الالتزام بها.
+    </p>
+
+    <p>
+        إذا كنت لا توافق على أي جزء من هذه الشروط،
+        فيجب عليك التوقف عن استخدام الموقع.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="number">
+        02
+    </div>
+
+    <h2>
+        طبيعة الخدمة
+    </h2>
+
+    <p>
+        AURORA EXCHANGE هو موقع إلكتروني يوفر
+        أدوات معلوماتية لتحويل العملات وعرض
+        أسعار الصرف.
+    </p>
+
+    <div class="highlight">
+        الموقع ليس بنكًا ولا شركة صرافة ولا مؤسسة
+        مالية، ولا يقوم بتنفيذ عمليات تحويل أموال
+        فعلية من خلال محول العملات الموجود فيه.
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="number">
+        03
+    </div>
+
+    <h2>
+        أسعار الصرف
+    </h2>
+
+    <p>
+        قد يتم الحصول على أسعار الصرف من مصادر
+        أو خدمات خارجية.
+    </p>
+
+    <p>
+        قد تتغير الأسعار باستمرار، وقد تختلف
+        الأسعار المعروضة في الموقع عن الأسعار
+        التي تقدمها البنوك أو شركات الصرافة
+        أو المؤسسات المالية.
+    </p>
+
+    <div class="warning">
+        لا تعتمد على السعر المعروض في الموقع
+        وحده لتنفيذ معاملة مالية فعلية.
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="number">
+        04
+    </div>
+
+    <h2>
+        الاستخدام المقبول
+    </h2>
+
+    <p>
+        يوافق المستخدم على استخدام الموقع بطريقة
+        قانونية ومسؤولة.
+    </p>
+
+    <ul>
+
+        <li>
+            عدم استخدام الموقع في أي نشاط غير قانوني.
+        </li>
+
+        <li>
+            عدم محاولة تعطيل الموقع أو إلحاق الضرر به.
+        </li>
+
+        <li>
+            عدم محاولة الوصول غير المصرح به إلى أنظمة
+            أو خدمات الموقع.
+        </li>
+
+        <li>
+            عدم استخدام الموقع بطريقة تؤثر سلبًا
+            على المستخدمين الآخرين.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<section class="section">
+
+    <div class="number">
+        05
+    </div>
+
+    <h2>
+        دقة المعلومات
+    </h2>
+
+    <p>
+        نبذل جهودًا معقولة للحفاظ على المعلومات
+        والخدمات المتوفرة في الموقع، ولكن لا نضمن
+        أن تكون جميع المعلومات دقيقة أو كاملة أو
+        محدثة في جميع الأوقات.
+    </p>
+
+    <p>
+        قد تحدث أخطاء تقنية أو تأخيرات أو انقطاعات
+        في خدمات الطرف الثالث التي يعتمد عليها
+        الموقع.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="number">
+        06
+    </div>
+
+    <h2>
+        القرارات المالية
+    </h2>
+
+    <p>
+        المعلومات التي يعرضها الموقع لا تشكل
+        استشارة مالية أو استثمارية أو مصرفية.
+    </p>
+
+    <p>
+        المستخدم مسؤول عن التحقق من الأسعار
+        والمعلومات من المصادر المناسبة قبل اتخاذ
+        أي قرار مالي.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="number">
+        07
+    </div>
+
+    <h2>
+        خدمات الطرف الثالث
+    </h2>
+
+    <p>
+        قد يعتمد الموقع على خدمات خارجية مثل
+        خدمات أسعار الصرف والاستضافة والتحليلات
+        والإعلانات.
+    </p>
+
+    <p>
+        قد تكون لهذه الخدمات شروط وسياسات مستقلة
+        عن شروط AURORA EXCHANGE.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="number">
+        08
+    </div>
+
+    <h2>
+        توفر الموقع
+    </h2>
+
+    <p>
+        نسعى إلى إبقاء الموقع متاحًا للمستخدمين،
+        ولكن لا نضمن أن الموقع سيعمل دون انقطاع
+        أو أخطاء في جميع الأوقات.
+    </p>
+
+    <p>
+        قد يتم إيقاف الموقع مؤقتًا لأغراض الصيانة
+        أو التحديث أو بسبب ظروف تقنية خارجة عن
+        السيطرة.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="number">
+        09
+    </div>
+
+    <h2>
+        الملكية الفكرية
+    </h2>
+
+    <p>
+        التصميم والهوية البصرية والعناصر البرمجية
+        والمحتوى الخاص بـ AURORA EXCHANGE محمية
+        بالحقوق المعمول بها حسب الحالة والقوانين
+        ذات الصلة.
+    </p>
+
+    <p>
+        لا يجوز نسخ أو إعادة توزيع العناصر الخاصة
+        بالموقع بطريقة تنتهك الحقوق المملوكة
+        لأصحابها.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="number">
+        10
+    </div>
+
+    <h2>
+        التعديلات
+    </h2>
+
+    <p>
+        نحتفظ بالحق في تعديل أو تطوير أو إيقاف
+        بعض وظائف الموقع عند الحاجة.
+    </p>
+
+    <p>
+        كما يمكن تحديث شروط الاستخدام هذه عند
+        إضافة خدمات أو وظائف جديدة.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="number">
+        11
+    </div>
+
+    <h2>
+        إخلاء المسؤولية
+    </h2>
+
+    <p>
+        يتم توفير الموقع والخدمات المتاحة فيه
+        على أساس المعلومات المتوفرة وقت الاستخدام،
+        دون ضمان مطلق لخلوها من الأخطاء.
+    </p>
+
+    <div class="warning">
+        يتحمل المستخدم مسؤولية التحقق من المعلومات
+        قبل استخدامها في أي معاملة أو قرار مالي.
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="number">
+        12
+    </div>
+
+    <h2>
+        التواصل
+    </h2>
+
+    <p>
+        لأي استفسار يتعلق باستخدام الموقع أو
+        شروط الخدمة، يمكن للمستخدم التواصل مع
+        إدارة AURORA EXCHANGE عبر وسائل الاتصال
+        التي يتم توفيرها في الموقع.
+    </p>
+
+</section>
+
+
+</div>
+
+
+<footer>
+
+    <div class="footer-brand">
+        AURORA EXCHANGE
+    </div>
+
+    <div>
+        © 2026 جميع الحقوق محفوظة
+    </div>
+
+    <div>
+        شروط الاستخدام جزء من موقع AURORA EXCHANGE
+    </div>
+
+</footer>
+
+
+</main>
+
+</body>
+
+</html>
