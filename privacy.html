@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="سياسة الخصوصية لموقع AURORA EXCHANGE"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <title>سياسة الخصوصية | AURORA EXCHANGE</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #050812;
+            --panel: rgba(255,255,255,.055);
+            --border: rgba(255,255,255,.10);
+            --text: #ffffff;
+            --muted: #9aa3bd;
+            --cyan: #00eaff;
+            --violet: #8b5cff;
+            --pink: #ff3cac;
+            --green: #00f5a0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+
+            font-family:
+                Arial,
+                "Segoe UI",
+                Tahoma,
+                sans-serif;
+
+            color: var(--text);
+
+            background:
+                radial-gradient(
+                    circle at 10% 10%,
+                    rgba(0,234,255,.13),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 90% 20%,
+                    rgba(139,92,255,.15),
+                    transparent 32%
+                ),
+
+                radial-gradient(
+                    circle at 50% 100%,
+                    rgba(255,60,172,.10),
+                    transparent 35%
+                ),
+
+                var(--bg);
+
+            line-height: 1.9;
+
+            overflow-x: hidden;
+        }
+
+        /* =====================================
+           BACKGROUND
+        ====================================== */
+
+        .background {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .orb {
+            position: absolute;
+
+            width: 280px;
+            height: 280px;
+
+            border-radius: 50%;
+
+            filter: blur(90px);
+
+            opacity: .22;
+
+            animation:
+                floatOrb
+                14s
+                infinite
+                alternate
+                ease-in-out;
+        }
+
+        .orb.one {
+            background: var(--cyan);
+            top: -100px;
+            right: -80px;
+        }
+
+        .orb.two {
+            background: var(--violet);
+            left: -100px;
+            top: 40%;
+            animation-delay: 3s;
+        }
+
+        .orb.three {
+            background: var(--pink);
+            right: 25%;
+            bottom: -150px;
+            animation-delay: 6s;
+        }
+
+        @keyframes floatOrb {
+
+            0% {
+                transform:
+                    translate3d(0,0,0)
+                    scale(1);
+            }
+
+            100% {
+                transform:
+                    translate3d(60px,-40px,0)
+                    scale(1.25);
+            }
+        }
+
+        /* =====================================
+           CONTAINER
+        ====================================== */
+
+        .container {
+            width: min(920px, calc(100% - 30px));
+
+            margin: 0 auto;
+
+            padding:
+                25px
+                0
+                50px;
+        }
+
+        /* =====================================
+           HEADER
+        ====================================== */
+
+        header {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            padding:
+                18px
+                20px;
+
+            margin-bottom: 25px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius: 22px;
+
+            background:
+                rgba(255,255,255,.045);
+
+            backdrop-filter: blur(25px);
+
+            box-shadow:
+                0 20px 70px
+                rgba(0,0,0,.25);
+        }
+
+        .brand {
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+        }
+
+        .brand-icon {
+            width: 46px;
+            height: 46px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 15px;
+
+            color: white;
+
+            font-size: 22px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--cyan),
+                    var(--violet),
+                    var(--pink)
+                );
+
+            box-shadow:
+                0 0 30px
+                rgba(0,234,255,.20);
+        }
+
+        .brand-name {
+            font-size: 18px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+        }
+
+        .brand-subtitle {
+            margin-top: 2px;
+
+            color: var(--muted);
+
+            font-size: 8px;
+
+            letter-spacing: 1.5px;
+        }
+
+        .back-button {
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-height: 42px;
+
+            padding:
+                0
+                15px;
+
+            border:
+                1px solid
+                rgba(0,234,255,.20);
+
+            border-radius: 13px;
+
+            color: var(--cyan);
+
+            background:
+                rgba(0,234,255,.05);
+
+            text-decoration: none;
+
+            font-size: 11px;
+
+            transition:
+                .25s ease;
+        }
+
+        .back-button:hover {
+            transform:
+                translateY(-2px);
+
+            background:
+                rgba(0,234,255,.10);
+
+            border-color:
+                rgba(0,234,255,.40);
+        }
+
+        /* =====================================
+           HERO
+        ====================================== */
+
+        .hero {
+            padding:
+                35px
+                25px;
+
+            margin-bottom: 18px;
+
+            text-align: center;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius: 28px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,.075),
+                    rgba(255,255,255,.025)
+                );
+
+            backdrop-filter: blur(25px);
+
+            box-shadow:
+                0 25px 80px
+                rgba(0,0,0,.30);
+        }
+
+        .hero-badge {
+            display: inline-block;
+
+            padding:
+                6px
+                12px;
+
+            margin-bottom: 14px;
+
+            border:
+                1px solid
+                rgba(0,234,255,.20);
+
+            border-radius: 30px;
+
+            color: var(--cyan);
+
+            background:
+                rgba(0,234,255,.04);
+
+            font-size: 8px;
+
+            letter-spacing: 2px;
+        }
+
+        .hero h1 {
+            font-size:
+                clamp(30px, 8vw, 52px);
+
+            line-height: 1.2;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--cyan),
+                    var(--violet),
+                    var(--pink)
+                );
+
+            background-size: 250%;
+
+            -webkit-background-clip: text;
+
+            background-clip: text;
+
+            color: transparent;
+
+            animation:
+                gradientMove
+                6s
+                infinite;
+        }
+
+        @keyframes gradientMove {
+
+            0% {
+                background-position: 0%;
+            }
+
+            50% {
+                background-position: 100%;
+            }
+
+            100% {
+                background-position: 0%;
+            }
+        }
+
+        .hero p {
+            max-width: 650px;
+
+            margin:
+                12px
+                auto
+                0;
+
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+        /* =====================================
+           LAST UPDATED
+        ====================================== */
+
+        .updated {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 8px;
+
+            margin:
+                0
+                auto
+                18px;
+
+            color: #707992;
+
+            font-size: 10px;
+        }
+
+        .updated-dot {
+            width: 6px;
+            height: 6px;
+
+            border-radius: 50%;
+
+            background: var(--green);
+
+            box-shadow:
+                0 0 12px
+                var(--green);
+        }
+
+        /* =====================================
+           CONTENT
+        ====================================== */
+
+        .content {
+            display: grid;
+
+            gap: 14px;
+        }
+
+        .section {
+            position: relative;
+
+            padding:
+                24px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius: 22px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            backdrop-filter: blur(18px);
+
+            transition:
+                transform
+                .25s ease,
+                border-color
+                .25s ease;
+        }
+
+        .section:hover {
+            transform:
+                translateY(-2px);
+
+            border-color:
+                rgba(0,234,255,.20);
+        }
+
+        .section-number {
+            position: absolute;
+
+            top: 20px;
+
+            left: 20px;
+
+            width: 32px;
+            height: 32px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 10px;
+
+            color: var(--cyan);
+
+            background:
+                rgba(0,234,255,.07);
+
+            border:
+                1px solid
+                rgba(0,234,255,.15);
+
+            font-size: 10px;
+
+            font-weight: bold;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+
+            padding-left: 45px;
+
+            color: white;
+
+            font-size: 19px;
+        }
+
+        .section p {
+            margin-top: 8px;
+
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+        .section ul {
+            margin-top: 12px;
+
+            padding-right: 20px;
+
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+        .section li {
+            margin-bottom: 7px;
+        }
+
+        .highlight {
+            margin-top: 15px;
+
+            padding:
+                14px
+                16px;
+
+            border-right:
+                3px solid
+                var(--cyan);
+
+            border-radius: 12px;
+
+            color: #dce3f5;
+
+            background:
+                rgba(0,234,255,.045);
+
+            font-size: 12px;
+        }
+
+        /* =====================================
+           CONTACT
+        ====================================== */
+
+        .contact-box {
+            margin-top: 18px;
+
+            padding:
+                18px;
+
+            text-align: center;
+
+            border:
+                1px solid
+                rgba(139,92,255,.20);
+
+            border-radius: 18px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(139,92,255,.08),
+                    rgba(0,234,255,.04)
+                );
+        }
+
+        .contact-box strong {
+            display: block;
+
+            margin-bottom: 5px;
+
+            font-size: 14px;
+        }
+
+        .contact-box span {
+            color: var(--muted);
+
+            font-size: 11px;
+        }
+
+        /* =====================================
+           FOOTER
+        ====================================== */
+
+        footer {
+            margin-top: 25px;
+
+            padding:
+                20px;
+
+            text-align: center;
+
+            border-top:
+                1px solid
+                rgba(255,255,255,.07);
+
+            color: #596177;
+
+            font-size: 9px;
+
+            line-height: 2;
+        }
+
+        .footer-brand {
+            color: #7d87a2;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+        }
+
+        /* =====================================
+           MOBILE
+        ====================================== */
+
+        @media (max-width: 600px) {
+
+            .container {
+                width:
+                    calc(100% - 20px);
+
+                padding-top: 10px;
+            }
+
+            header {
+                padding:
+                    13px;
+
+                border-radius: 18px;
+            }
+
+            .brand-icon {
+                width: 40px;
+                height: 40px;
+
+                border-radius: 13px;
+            }
+
+            .brand-name {
+                font-size: 15px;
+
+                letter-spacing: 2px;
+            }
+
+            .brand-subtitle {
+                font-size: 7px;
+            }
+
+            .back-button {
+                min-height: 38px;
+
+                padding:
+                    0
+                    11px;
+
+                font-size: 9px;
+            }
+
+            .hero {
+                padding:
+                    28px
+                    16px;
+
+                border-radius: 22px;
+            }
+
+            .section {
+                padding:
+                    20px
+                    17px;
+            }
+
+            .section h2 {
+                font-size: 17px;
+
+                padding-left: 38px;
+            }
+
+            .section p,
+            .section ul {
+                font-size: 12px;
+            }
+
+            .section-number {
+                top: 17px;
+                left: 15px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- BACKGROUND -->
+
+    <div class="background">
+
+        <div class="orb one"></div>
+
+        <div class="orb two"></div>
+
+        <div class="orb three"></div>
+
+    </div>
+
+
+    <main class="container">
+
+
+        <!-- HEADER -->
+
+        <header>
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    ✦
+                </div>
+
+                <div>
+
+                    <div class="brand-name">
+                        AURORA
+                    </div>
+
+                    <div class="brand-subtitle">
+                        EXCHANGE • CURRENCY INTELLIGENCE
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="index.html"
+                class="back-button"
+            >
+                العودة إلى الموقع
+            </a>
+
+        </header>
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-badge">
+                PRIVACY & SECURITY
+            </div>
+
+            <h1>
+                سياسة الخصوصية
+            </h1>
+
+            <p>
+                توضح هذه الصفحة كيفية تعامل AURORA EXCHANGE
+                مع المعلومات والبيانات عند استخدام الموقع.
+            </p>
+
+        </section>
+
+
+        <!-- UPDATED -->
+
+        <div class="updated">
+
+            <span class="updated-dot"></span>
+
+            <span>
+                آخر تحديث: أغسطس 2026
+            </span>
+
+        </div>
+
+
+        <!-- CONTENT -->
+
+        <div class="content">
+
+
+            <!-- 01 -->
+
+            <section class="section">
+
+                <div class="section-number">
+                    01
+                </div>
+
+                <h2>
+                    مقدمة
+                </h2>
+
+                <p>
+                    مرحبًا بك في AURORA EXCHANGE.
+                    نحن نحترم خصوصية زوار الموقع ونلتزم
+                    بتقديم تجربة استخدام واضحة وشفافة.
+                </p>
+
+                <p>
+                    توضح سياسة الخصوصية هذه طبيعة المعلومات
+                    التي قد يتم التعامل معها أثناء استخدام
+                    الموقع والخدمات المتوفرة فيه.
+                </p>
+
+            </section>
+
+
+            <!-- 02 -->
+
+            <section class="section">
+
+                <div class="section-number">
+                    02
+                </div>
+
+                <h2>
+                    المعلومات التي نجمعها
+                </h2>
+
+                <p>
+                    الموقع الأساسي مصمم ليعمل كمحول عملات
+                    ولا يتطلب من المستخدم إنشاء حساب لاستخدام
+                    وظيفة التحويل الأساسية.
+                </p>
+
+                <p>
+                    لا يطلب الموقع في صورته الحالية من المستخدم
+                    إدخال معلومات شخصية مثل الاسم أو رقم الهاتف
+                    أو العنوان لاستخدام محول العملات.
+                </p>
+
+            </section>
+
+
+            <!-- 03 -->
+
+            <section class="section">
+
+                <div class="section-number">
+                    03
+                </div>
+
+                <h2>
+                    بيانات التحويل
+                </h2>
+
+                <p>
+                    عند استخدام محول العملات، يقوم المستخدم
+                    بإدخال مبلغ واختيار العملة المطلوبة.
+                </p>
+
+                <p>
+                    وظيفة التحويل الأساسية لا تتطلب تخزين
+                    هذه القيم في قاعدة بيانات خاصة بالموقع.
+                </p>
+
+                <div class="highlight">
+                    يتم استخدام البيانات المدخلة لغرض إجراء
+                    عملية التحويل وعرض النتيجة للمستخدم.
+                </div>
+
+            </section>
+
+
+            <!-- 04 -->
+
+            <section class="section">
+
+                <div class="section-number">
+                    04
+                </div>
+
+                <h2>
+                    أسعار الصرف
+                </h2>
+
+                <p>
+                    قد يستخدم الموقع خدمات خارجية للحصول على
+                    أسعار صرف العملات وتحديثها.
+                </p>
+
+                <p>
+                    عند طلب سعر صرف مباشر، قد يتم إرسال رمز
+                    العملة المطلوبة إلى مزود خدمة أسعار الصرف
+                    للحصول على البيانات اللازمة.
+                </p>
+
+                <div class="highlight">
+                    أسعار الصرف المعروضة لأغراض معلوماتية،
+                    وقد تختلف عن الأسعار الفعلية التي تقدمها
+                    البنوك أو شركات الصرافة.
+                </div>
+
+            </section>
+
+
+            <!-- 05 -->
+
+            <section class="section">
+
+                <div class="section-number">
+                    05
+                </div>
+
+                <h2>
+                    خدمات الطرف الثالث
+                </h2>
+
+                <p>
+                    قد يعتمد الموقع على خدمات خارجية لتوفير
+                    بعض الوظائف، مثل استضافة الموقع أو جلب
+                    أسعار الصرف أو عرض الإعلانات مستقبلًا.
+                </p>
+
+                <p>
+                    قد تكون لهذه الخدمات سياسات خصوصية خاصة بها،
+                    ولذلك ننصح المستخدم بمراجعة سياسات الخصوصية
+                    الخاصة بالخدمات الخارجية عند الحاجة.
+                </p>
+
+            </section>
+
+
+            <!-- 06 -->
+
+            <section class="section">
+
+                <div class="section-number">
+                    06
+                </div>
+
+                <h2>
+                    ملفات تعريف الارتباط
+                </h2>
+
+                <p>
+                    قد تستخدم خدمات الطرف الثالث ملفات تعريف
+                    الارتباط أو تقنيات مشابهة لأغراض تشغيلية
+                    أو إحصائية أو إعلانية.
+                </p>
+
+                <p>
+                    يمكن للمستخدم التحكم في ملفات تعريف الارتباط
+                    من خلال إعدادات المتصفح الخاص به.
+                </p>
+
+            </section>
+
+
+            <!-- 07 -->
+
+            <section class="section">
+
+                <div class="section-number">
+                    07
+                </div>
+
+                <h2>
+                    الإعلانات
+                </h2>
+
+                <p>
+                    قد تتم إضافة خدمات إعلانية إلى الموقع
+                    مستقبلًا بهدف دعم تشغيل الخدمة وتطويرها.
+                </p>
+
+                <p>
+                    عند إضافة الإعلانات، قد تستخدم شبكات الإعلان
+                    تقنيات مثل ملفات تعريف الارتباط لتقديم
+                    إعلانات أو قياس الأداء وفقًا لسياساتها.
+                </p>
+
+            </section>
+
+
+            <!-- 08 -->
+
+            <section class="section">
+
+                <div class="section-number">
+                    08
+                </div>
+
+                <h2>
+                    حماية المعلومات
+                </h2>
+
+                <p>
+                    نسعى إلى استخدام وسائل تقنية مناسبة للمساعدة
+                    في حماية الموقع والمعلومات المرتبطة به.
+                </p>
+
+                <p>
+                    ومع ذلك، لا يمكن ضمان أن تكون أي خدمة
+                    إلكترونية محمية بشكل مطلق من جميع المخاطر
+                    التقنية أو الأمنية.
+                </p>
+
+            </section>
+
+
+            <!-- 09 -->
+
+            <section class="section">
+
+                <div class="section-number">
+                    09
+                </div>
+
+                <h2>
+                    الروابط الخارجية
+                </h2>
+
+                <p>
+                    قد يحتوي الموقع مستقبلًا على روابط لخدمات
+                    أو مواقع خارجية.
+                </p>
+
+                <p>
+                    AURORA EXCHANGE لا يتحمل مسؤولية محتوى
+                    أو ممارسات الخصوصية الخاصة بالمواقع الخارجية.
+                </p>
+
+            </section>
+
+
+            <!-- 10 -->
+
+            <section class="section">
+
+                <div class="section-number">
+                    10
+                </div>
+
+                <h2>
+                    استخدام الموقع
+                </h2>
+
+                <p>
+                    باستخدامك للموقع، فإنك تقر بأنك قرأت هذه
+                    السياسة وفهمت طبيعة استخدام البيانات
+                    الموضحة فيها.
+                </p>
+
+                <p>
+                    إذا كنت لا توافق على هذه السياسة، يمكنك
+                    التوقف عن استخدام الموقع.
+                </p>
+
+            </section>
+
+
+            <!-- 11 -->
+
+            <section class="section">
+
+                <div class="section-number">
+                    11
+                </div>
+
+                <h2>
+                    تحديث سياسة الخصوصية
+                </h2>
+
+                <p>
+                    قد نقوم بتحديث سياسة الخصوصية عند إضافة
+                    وظائف أو خدمات جديدة إلى AURORA EXCHANGE.
+                </p>
+
+                <p>
+                    سيتم نشر النسخة المحدثة في هذه الصفحة،
+                    ويُعد استمرار استخدام الموقع بعد التحديث
+                    موافقة على السياسة المعدلة وفقًا للقوانين
+                    المعمول بها.
+                </p>
+
+            </section>
+
+
+            <!-- 12 -->
+
+            <section class="section">
+
+                <div class="section-number">
+                    12
+                </div>
+
+                <h2>
+                    التواصل
+                </h2>
+
+                <p>
+                    إذا كان لديك سؤال متعلق بسياسة الخصوصية
+                    أو طريقة تعامل الموقع مع البيانات، يمكنك
+                    التواصل مع إدارة الموقع عبر وسيلة الاتصال
+                    التي يتم توفيرها في الموقع.
+                </p>
+
+
+                <div class="contact-box">
+
+                    <strong>
+                        AURORA EXCHANGE
+                    </strong>
+
+                    <span>
+                        منصة معلومات وتحويل العملات
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- DISCLAIMER -->
+
+            <section class="section">
+
+                <div class="section-number">
+                    !
+                </div>
+
+                <h2>
+                    تنبيه مهم
+                </h2>
+
+                <p>
+                    AURORA EXCHANGE هو موقع معلوماتي لتحويل
+                    العملات وعرض أسعار الصرف.
+                </p>
+
+                <p>
+                    المعلومات المعروضة لا تُعد استشارة مالية
+                    أو استثمارية أو مصرفية، ولا ينبغي الاعتماد
+                    عليها وحدها لاتخاذ قرارات مالية.
+                </p>
+
+            </section>
+
+
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <div class="footer-brand">
+                AURORA EXCHANGE
+            </div>
+
+            <div>
+                © 2026 جميع الحقوق محفوظة
+            </div>
+
+            <div>
+                هذه الصفحة جزء من موقع AURORA EXCHANGE
+            </div>
+
+        </footer>
+
+
+    </main>
+
+</body>
+
+</html>
