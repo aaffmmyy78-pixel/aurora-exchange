@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="عن AURORA EXCHANGE - منصة ذكية لتحويل العملات"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <title>
+        عن AURORA EXCHANGE
+    </title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        :root {
+
+            --bg: #050812;
+
+            --text: #ffffff;
+
+            --muted: #9aa3bd;
+
+            --cyan: #00eaff;
+
+            --violet: #8b5cff;
+
+            --pink: #ff3cac;
+
+            --green: #00f5a0;
+
+            --border:
+                rgba(255,255,255,.10);
+
+        }
+
+
+        html {
+
+            scroll-behavior:
+                smooth;
+
+        }
+
+
+        body {
+
+            min-height:
+                100vh;
+
+            overflow-x:
+                hidden;
+
+            font-family:
+                Arial,
+                "Segoe UI",
+                Tahoma,
+                sans-serif;
+
+            color:
+                var(--text);
+
+            line-height:
+                1.9;
+
+            background:
+
+                radial-gradient(
+                    circle at 10% 10%,
+                    rgba(0,234,255,.13),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 90% 20%,
+                    rgba(139,92,255,.16),
+                    transparent 32%
+                ),
+
+                radial-gradient(
+                    circle at 50% 100%,
+                    rgba(255,60,172,.12),
+                    transparent 35%
+                ),
+
+                var(--bg);
+
+        }
+
+
+        /* =================================
+           BACKGROUND
+        ================================= */
+
+        .background {
+
+            position:
+                fixed;
+
+            inset:
+                0;
+
+            z-index:
+                -1;
+
+            overflow:
+                hidden;
+
+            pointer-events:
+                none;
+
+        }
+
+
+        .orb {
+
+            position:
+                absolute;
+
+            width:
+                320px;
+
+            height:
+                320px;
+
+            border-radius:
+                50%;
+
+            filter:
+                blur(100px);
+
+            opacity:
+                .22;
+
+            animation:
+                orbMove
+                15s
+                infinite
+                alternate
+                ease-in-out;
+
+        }
+
+
+        .orb.one {
+
+            background:
+                var(--cyan);
+
+            right:
+                -130px;
+
+            top:
+                -100px;
+
+        }
+
+
+        .orb.two {
+
+            background:
+                var(--violet);
+
+            left:
+                -130px;
+
+            top:
+                40%;
+
+            animation-delay:
+                3s;
+
+        }
+
+
+        .orb.three {
+
+            background:
+                var(--pink);
+
+            right:
+                25%;
+
+            bottom:
+                -180px;
+
+            animation-delay:
+                6s;
+
+        }
+
+
+        @keyframes orbMove {
+
+            0% {
+
+                transform:
+                    translate(0,0)
+                    scale(1);
+
+            }
+
+            100% {
+
+                transform:
+                    translate(70px,-60px)
+                    scale(1.35);
+
+            }
+
+        }
+
+
+        /* =================================
+           MAIN CONTAINER
+        ================================= */
+
+        .container {
+
+            width:
+                min(
+                    920px,
+                    calc(100% - 30px)
+                );
+
+            margin:
+                auto;
+
+            padding:
+                25px 0 50px;
+
+        }
+
+
+        /* =================================
+           HEADER
+        ================================= */
+
+        header {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+
+            padding:
+                18px 20px;
+
+            margin-bottom:
+                22px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                22px;
+
+            background:
+                rgba(255,255,255,.045);
+
+            backdrop-filter:
+                blur(25px);
+
+            box-shadow:
+                0 20px 70px
+                rgba(0,0,0,.25);
+
+        }
+
+
+        .brand {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                12px;
+
+        }
+
+
+        .brand-icon {
+
+            width:
+                46px;
+
+            height:
+                46px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            border-radius:
+                15px;
+
+            font-size:
+                22px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    var(--cyan),
+                    var(--violet),
+                    var(--pink)
+                );
+
+            box-shadow:
+
+                0 0 30px
+                rgba(0,234,255,.20);
+
+        }
+
+
+        .brand-name {
+
+            font-size:
+                18px;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                3px;
+
+        }
+
+
+        .brand-subtitle {
+
+            margin-top:
+                2px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                8px;
+
+            letter-spacing:
+                1.5px;
+
+        }
+
+
+        .back-button {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            min-height:
+                42px;
+
+            padding:
+                0 15px;
+
+            border:
+                1px solid
+                rgba(0,234,255,.20);
+
+            border-radius:
+                13px;
+
+            color:
+                var(--cyan);
+
+            background:
+                rgba(0,234,255,.05);
+
+            text-decoration:
+                none;
+
+            font-size:
+                11px;
+
+            transition:
+                .25s;
+
+        }
+
+
+        .back-button:hover {
+
+            transform:
+                translateY(-2px);
+
+            background:
+                rgba(0,234,255,.10);
+
+        }
+
+
+        /* =================================
+           HERO
+        ================================= */
+
+        .hero {
+
+            padding:
+                42px 20px;
+
+            margin-bottom:
+                18px;
+
+            text-align:
+                center;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                28px;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,.075),
+                    rgba(255,255,255,.025)
+                );
+
+            backdrop-filter:
+                blur(25px);
+
+            box-shadow:
+                0 25px 80px
+                rgba(0,0,0,.30);
+
+        }
+
+
+        .badge {
+
+            display:
+                inline-block;
+
+            padding:
+                6px 12px;
+
+            margin-bottom:
+                14px;
+
+            border:
+                1px solid
+                rgba(0,234,255,.20);
+
+            border-radius:
+                30px;
+
+            color:
+                var(--cyan);
+
+            background:
+                rgba(0,234,255,.04);
+
+            font-size:
+                8px;
+
+            letter-spacing:
+                2px;
+
+        }
+
+
+        .hero h1 {
+
+            font-size:
+                clamp(
+                    32px,
+                    9vw,
+                    56px
+                );
+
+            line-height:
+                1.15;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    var(--cyan),
+                    var(--violet),
+                    var(--pink)
+                );
+
+            background-size:
+                250%;
+
+            -webkit-background-clip:
+                text;
+
+            background-clip:
+                text;
+
+            color:
+                transparent;
+
+            animation:
+                gradientFlow
+                6s
+                infinite;
+
+        }
+
+
+        @keyframes gradientFlow {
+
+            0% {
+
+                background-position:
+                    0%;
+
+            }
+
+            50% {
+
+                background-position:
+                    100%;
+
+            }
+
+            100% {
+
+                background-position:
+                    0%;
+
+            }
+
+        }
+
+
+        .hero p {
+
+            max-width:
+                680px;
+
+            margin:
+                14px auto 0;
+
+            color:
+                var(--muted);
+
+            font-size:
+                13px;
+
+        }
+
+
+        /* =================================
+           CONTENT
+        ================================= */
+
+        .content {
+
+            display:
+                grid;
+
+            gap:
+                14px;
+
+        }
+
+
+        .section {
+
+            position:
+                relative;
+
+            padding:
+                25px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                22px;
+
+            background:
+                rgba(255,255,255,.035);
+
+            backdrop-filter:
+                blur(18px);
+
+            transition:
+                .25s;
+
+        }
+
+
+        .section:hover {
+
+            transform:
+                translateY(-2px);
+
+            border-color:
+                rgba(0,234,255,.20);
+
+        }
+
+
+        .section-icon {
+
+            width:
+                48px;
+
+            height:
+                48px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            margin-bottom:
+                13px;
+
+            border-radius:
+                14px;
+
+            color:
+                var(--cyan);
+
+            background:
+                rgba(0,234,255,.07);
+
+            border:
+                1px solid
+                rgba(0,234,255,.15);
+
+            font-size:
+                20px;
+
+        }
+
+
+        .section h2 {
+
+            margin-bottom:
+                9px;
+
+            font-size:
+                20px;
+
+        }
+
+
+        .section p {
+
+            margin-top:
+                8px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                13px;
+
+        }
+
+
+        /* =================================
+           MISSION
+        ================================= */
+
+        .mission {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    1fr
+                );
+
+            gap:
+                10px;
+
+            margin-top:
+                15px;
+
+        }
+
+
+        .mission-card {
+
+            padding:
+                18px 12px;
+
+            text-align:
+                center;
+
+            border:
+                1px solid
+                rgba(255,255,255,.07);
+
+            border-radius:
+                17px;
+
+            background:
+                rgba(255,255,255,.025);
+
+        }
+
+
+        .mission-card strong {
+
+            display:
+                block;
+
+            margin-bottom:
+                5px;
+
+            font-size:
+                13px;
+
+        }
+
+
+        .mission-card span {
+
+            color:
+                var(--muted);
+
+            font-size:
+                10px;
+
+        }
+
+
+        .mission-icon {
+
+            font-size:
+                22px;
+
+            margin-bottom:
+                8px;
+
+        }
+
+
+        .cyan {
+
+            color:
+                var(--cyan);
+
+        }
+
+
+        .violet {
+
+            color:
+                var(--violet);
+
+        }
+
+
+        .pink {
+
+            color:
+                var(--pink);
+
+        }
+
+
+        /* =================================
+           FEATURES
+        ================================= */
+
+        .feature-list {
+
+            display:
+                grid;
+
+            gap:
+                9px;
+
+            margin-top:
+                14px;
+
+        }
+
+
+        .feature {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                12px;
+
+            padding:
+                13px;
+
+            border:
+                1px solid
+                rgba(255,255,255,.06);
+
+            border-radius:
+                14px;
+
+            background:
+                rgba(255,255,255,.025);
+
+        }
+
+
+        .feature-symbol {
+
+            width:
+                36px;
+
+            height:
+                36px;
+
+            flex-shrink:
+                0;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            border-radius:
+                11px;
+
+            color:
+                var(--cyan);
+
+            background:
+                rgba(0,234,255,.06);
+
+        }
+
+
+        .feature strong {
+
+            display:
+                block;
+
+            font-size:
+                12px;
+
+        }
+
+
+        .feature span {
+
+            display:
+                block;
+
+            margin-top:
+                2px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                10px;
+
+        }
+
+
+        /* =================================
+           STATUS
+        ================================= */
+
+        .status {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                8px;
+
+            margin-top:
+                16px;
+
+            padding:
+                13px 15px;
+
+            border:
+                1px solid
+                rgba(0,245,160,.14);
+
+            border-radius:
+                14px;
+
+            color:
+                #c9f9e7;
+
+            background:
+                rgba(0,245,160,.045);
+
+            font-size:
+                11px;
+
+        }
+
+
+        .status-dot {
+
+            width:
+                7px;
+
+            height:
+                7px;
+
+            flex-shrink:
+                0;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--green);
+
+            box-shadow:
+                0 0 12px
+                var(--green);
+
+            animation:
+                pulse
+                1.5s
+                infinite;
+
+        }
+
+
+        @keyframes pulse {
+
+            50% {
+
+                opacity:
+                    .3;
+
+                transform:
+                    scale(.7);
+
+            }
+
+        }
+
+
+        /* =================================
+           FOOTER
+        ================================= */
+
+        footer {
+
+            margin-top:
+                25px;
+
+            padding:
+                20px;
+
+            text-align:
+                center;
+
+            border-top:
+                1px solid
+                rgba(255,255,255,.07);
+
+            color:
+                #596177;
+
+            font-size:
+                9px;
+
+            line-height:
+                2;
+
+        }
+
+
+        .footer-brand {
+
+            color:
+                #7d87a2;
+
+            font-weight:
+                bold;
+
+            letter-spacing:
+                2px;
+
+        }
+
+
+        /* =================================
+           MOBILE
+        ================================= */
+
+        @media (max-width:600px) {
+
+            .container {
+
+                width:
+                    calc(100% - 20px);
+
+                padding-top:
+                    10px;
+
+            }
+
+
+            header {
+
+                padding:
+                    13px;
+
+                border-radius:
+                    18px;
+
+            }
+
+
+            .brand-icon {
+
+                width:
+                    40px;
+
+                height:
+                    40px;
+
+            }
+
+
+            .brand-name {
+
+                font-size:
+                    15px;
+
+                letter-spacing:
+                    2px;
+
+            }
+
+
+            .brand-subtitle {
+
+                font-size:
+                    7px;
+
+            }
+
+
+            .back-button {
+
+                min-height:
+                    38px;
+
+                padding:
+                    0 10px;
+
+                font-size:
+                    9px;
+
+            }
+
+
+            .hero {
+
+                padding:
+                    30px 15px;
+
+                border-radius:
+                    22px;
+
+            }
+
+
+            .section {
+
+                padding:
+                    20px 17px;
+
+            }
+
+
+            .section h2 {
+
+                font-size:
+                    18px;
+
+            }
+
+
+            .section p {
+
+                font-size:
+                    12px;
+
+            }
+
+
+            .mission {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="background">
+
+    <div class="orb one"></div>
+
+    <div class="orb two"></div>
+
+    <div class="orb three"></div>
+
+</div>
+
+
+<main class="container">
+
+
+<header>
+
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            ✦
+        </div>
+
+
+        <div>
+
+            <div class="brand-name">
+                AURORA
+            </div>
+
+            <div class="brand-subtitle">
+                EXCHANGE • CURRENCY INTELLIGENCE
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a
+        href="index.html"
+        class="back-button"
+    >
+        العودة إلى الموقع
+    </a>
+
+
+</header>
+
+
+
+<section class="hero">
+
+
+    <div class="badge">
+        ABOUT AURORA
+    </div>
+
+
+    <h1>
+        عن AURORA
+    </h1>
+
+
+    <p>
+        منصة رقمية حديثة تهدف إلى جعل
+        تحويل العملات ومتابعة أسعار الصرف
+        أكثر وضوحًا وسهولة وأناقة.
+    </p>
+
+
+</section>
+
+
+
+<div class="content">
+
+
+
+<section class="section">
+
+
+    <div class="section-icon">
+        ✦
+    </div>
+
+
+    <h2>
+        ما هي AURORA EXCHANGE؟
+    </h2>
+
+
+    <p>
+        AURORA EXCHANGE هي منصة إلكترونية
+        مصممة لتوفير تجربة حديثة وسريعة
+        لتحويل العملات ومعرفة قيمة عملة
+        مقابل عملة أخرى.
+    </p>
+
+
+    <p>
+        تجمع المنصة بين واجهة استخدام بسيطة
+        ومحرك تحويل يعتمد على بيانات أسعار
+        الصرف المتاحة من مصادر خارجية.
+    </p>
+
+
+</section>
+
+
+
+<section class="section">
+
+
+    <div class="section-icon cyan">
+        ◈
+    </div>
+
+
+    <h2>
+        رؤيتنا
+    </h2>
+
+
+    <p>
+        رؤيتنا هي بناء تجربة مختلفة عن
+        محولات العملات التقليدية؛ تجربة
+        تجمع بين السرعة، الوضوح، التصميم
+        والتقنية الحديثة.
+    </p>
+
+
+    <div class="mission">
+
+
+        <div class="mission-card">
+
+            <div class="mission-icon cyan">
+                ⚡
+            </div>
+
+            <strong>
+                السرعة
+            </strong>
+
+            <span>
+                نتائج سريعة وواضحة
+            </span>
+
+        </div>
+
+
+        <div class="mission-card">
+
+            <div class="mission-icon violet">
+                ◇
+            </div>
+
+            <strong>
+                الذكاء
+            </strong>
+
+            <span>
+                أدوات تحويل سهلة
+            </span>
+
+        </div>
+
+
+        <div class="mission-card">
+
+            <div class="mission-icon pink">
+                ✦
+            </div>
+
+            <strong>
+                التجربة
+            </strong>
+
+            <span>
+                تصميم مختلف ومميز
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<section class="section">
+
+
+    <div class="section-icon violet">
+        ⚙
+    </div>
+
+
+    <h2>
+        كيف تعمل المنصة؟
+    </h2>
+
+
+    <p>
+        يحدد المستخدم المبلغ الذي يريد
+        تحويله، ثم يختار العملة الأصلية
+        والعملة التي يريد معرفة قيمتها.
+    </p>
+
+
+    <p>
+        يقوم محرك التحويل بحساب النتيجة
+        باستخدام سعر الصرف المتاح، ثم
+        يعرض القيمة بشكل مباشر.
+    </p>
+
+
+    <div class="feature-list">
+
+
+        <div class="feature">
+
+            <div class="feature-symbol">
+                01
+            </div>
+
+            <div>
+
+                <strong>
+                    أدخل المبلغ
+                </strong>
+
+                <span>
+                    اكتب القيمة التي تريد تحويلها.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-symbol">
+                02
+            </div>
+
+            <div>
+
+                <strong>
+                    اختر العملات
+                </strong>
+
+                <span>
+                    حدد العملة الأصلية والعملة المستهدفة.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-symbol">
+                03
+            </div>
+
+            <div>
+
+                <strong>
+                    احصل على النتيجة
+                </strong>
+
+                <span>
+                    تظهر قيمة التحويل وسعر الصرف.
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<section class="section">
+
+
+    <div class="section-icon pink">
+        ◎
+    </div>
+
+
+    <h2>
+        البيانات والأسعار
+    </h2>
+
+
+    <p>
+        تعتمد المنصة عند توفر الاتصال على
+        بيانات أسعار الصرف القادمة من خدمة
+        خارجية.
+    </p>
+
+
+    <p>
+        لذلك قد تتغير الأسعار بمرور الوقت،
+        وقد تختلف عن الأسعار الفعلية التي
+        تقدمها البنوك أو شركات الصرافة.
+    </p>
+
+
+    <div class="status">
+
+        <span class="status-dot"></span>
+
+        <span>
+            المنصة مصممة للعمل مع بيانات
+            أسعار صرف محدثة عند توفر الخدمة.
+        </span>
+
+    </div>
+
+
+</section>
+
+
+
+<section class="section">
+
+
+    <div class="section-icon cyan">
+        ✓
+    </div>
+
+
+    <h2>
+        ماذا نركز عليه؟
+    </h2>
+
+
+    <div class="feature-list">
+
+
+        <div class="feature">
+
+            <div class="feature-symbol">
+                ⚡
+            </div>
+
+            <div>
+
+                <strong>
+                    أداء سريع
+                </strong>
+
+                <span>
+                    تقليل الخطوات للوصول إلى النتيجة.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-symbol">
+                ◈
+            </div>
+
+            <div>
+
+                <strong>
+                    واجهة واضحة
+                </strong>
+
+                <span>
+                    عرض المعلومات بطريقة سهلة القراءة.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-symbol">
+                ✦
+            </div>
+
+            <div>
+
+                <strong>
+                    تجربة مختلفة
+                </strong>
+
+                <span>
+                    تصميم بصري حديث بعيد عن الشكل التقليدي.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-symbol">
+                ∞
+            </div>
+
+            <div>
+
+                <strong>
+                    تطوير مستمر
+                </strong>
+
+                <span>
+                    إمكانية إضافة أدوات وخدمات جديدة مستقبلًا.
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<section class="section">
+
+
+    <div class="section-icon">
+        !
+    </div>
+
+
+    <h2>
+        ملاحظة مهمة
+    </h2>
+
+
+    <p>
+        AURORA EXCHANGE أداة معلوماتية
+        لتحويل العملات وليست مؤسسة مالية
+        أو بنكًا أو شركة صرافة.
+    </p>
+
+
+    <p>
+        الأسعار والنتائج المعروضة لأغراض
+        معلوماتية، ويجب التحقق من السعر
+        النهائي لدى الجهة المالية المختصة
+        قبل تنفيذ أي معاملة.
+    </p>
+
+
+</section>
+
+
+
+<section class="section">
+
+
+    <div class="section-icon green">
+        ♡
+    </div>
+
+
+    <h2>
+        مستقبل AURORA
+    </h2>
+
+
+    <p>
+        يمكن تطوير المنصة مستقبلًا بإضافة
+        المزيد من العملات، أدوات مالية
+        معلوماتية، رسوم بيانية، سجل للتحويلات
+        ومزايا أخرى تجعل تجربة المستخدم
+        أكثر فائدة.
+    </p>
+
+
+    <p>
+        الهدف هو الاستمرار في بناء منصة
+        بسيطة في استخدامها، قوية في تقنيتها
+        ومختلفة في تجربتها.
+    </p>
+
+
+</section>
+
+
+
+</div>
+
+
+
+<footer>
+
+
+    <div class="footer-brand">
+        AURORA EXCHANGE
+    </div>
+
+
+    <div>
+        © 2026 جميع الحقوق محفوظة
+    </div>
+
+
+    <div>
+        منصة معلوماتية لتحويل العملات
+    </div>
+
+
+</footer>
+
+
+</main>
+
+
+</body>
+
+</html>
